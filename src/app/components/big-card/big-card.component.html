@@ -2,6 +2,7 @@
     <a [routerLink]="['content', id]">
         <img src="{{ img }}">
     </a>
-    <h2>{{ title }}</h2>
+    <h2 [innerHTML]="title"></h2>
+    <div class="excerpt" [innerHTML]="excerpt"></div>
     Published: {{ date }}
 </div>

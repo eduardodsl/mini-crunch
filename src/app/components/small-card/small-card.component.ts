@@ -14,7 +14,7 @@ export class SmallCardComponent implements OnInit {
   title:string = "";
 
   @Input()
-  date:Date|null = null;
+  date:string = "";
 
   @Input()
   img:string = "";

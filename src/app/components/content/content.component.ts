@@ -11,7 +11,7 @@ export class ContentComponent implements OnInit {
 
   image:string = "";
   title:string = "";
-  date:Date|null = null;
+  date:string = "";
   text:string = "";
 
   constructor(private route:ActivatedRoute, private dataService:DataService) { }
@@ -22,7 +22,7 @@ export class ContentComponent implements OnInit {
       const content:any = await this.dataService.getPost(id);
       this.image = content.jetpack_featured_media_url;
       this.title = content.title.rendered;
-      this.date = content.date;
+      this.date = content.formatted_date;
       this.text = content.content.rendered;
     });
   }

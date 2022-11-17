@@ -15,13 +15,16 @@ export class BigCardComponent implements OnInit {
   title:string = "";
 
   @Input()
-  date:Date|null = null;
+  date:string|null = null;
 
   @Input()
   img:string = "";
 
+  @Input()
+  excerpt:string = "";
+
   constructor() {}
-  
+ 
   ngOnInit(): void {
   }
 

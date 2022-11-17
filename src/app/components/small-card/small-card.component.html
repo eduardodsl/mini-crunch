@@ -1,7 +1,7 @@
 <div class="container small-card">
-    <a [routerLink]="['content', id]">
+    <a class="card-img" [routerLink]="['content', id]">
         <img src="{{ img }}">
     </a>
-    <h2>{{ title }} {{ id }}</h2>
+    <h2 [innerHTML]="title"></h2>
     Published: {{ date }}
 </div>

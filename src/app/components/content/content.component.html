@@ -1,8 +1,12 @@
 <section role="content" class="container content">
     <article>
-        <img src="{{ image }}" alt="" />
+        <div class="article-img">
+            <img src="{{ image }}" alt="" />
+        </div>
         <h2>{{ title }}</h2>
-        {{ date }}
-        <p [innerHTML]="text"></p>
+        <div class="article-date">
+            <strong>Published:</strong> {{ date }}
+        </div>
+        <div class="article-content" [innerHTML]="text"></div>
     </article>
 </section>

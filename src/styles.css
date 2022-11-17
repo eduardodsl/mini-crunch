@@ -1,1 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body,html{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+ul, li, h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, strong {
+    font-weight: 600;
+}
+
+.small-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container.small-card{
+    padding-bottom: 20px;
+}
+
+.container.small-card .card-img{
+    margin-bottom: 10px;
+}
+
+.big-card img,
+.small-card img{
+    width: 100%;
+}
+
+.card-img{
+    display: block;
+    overflow: hidden;
+    height: 264px;
+}
+
+body .layout{
+    max-width: 1024px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+}
+
+header h1,
+article h2 {
+    background: linear-gradient(rgba(9,170,101,1) 0%, rgba(6,209,14,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+header h1{
+    flex-grow: 1;
+    align-self: center;
+    align-content: center;
+    font-size: 3em;
+}
+
+article h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+article .article-img img{
+    width: 100%;
+}
+
+article .article-content {
+    text-align: justify;
+}
+
+nav ul li a{
+    display: block;
+    padding: 4px 10px;
+    color: white;
+    text-align: center;
+}
+
+nav ul li:nth-child(1) a{
+    background-color: #09AB63;
+}
+
+nav ul li:nth-child(2) a{
+    background-color: #08BD3A;
+}
+
+nav ul li:nth-child(3) a{
+    background-color: #06CF12;
+}

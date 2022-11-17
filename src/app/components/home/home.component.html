@@ -2,12 +2,15 @@
     [id]="main.id"
     [img]="main.jetpack_featured_media_url"
     [title]="main.title.rendered"
-    [date]="main.date"
+    [date]="main.formatted_date"
+    [excerpt]="main.excerpt.rendered"
   ></app-big-card>
-  <app-small-card
-    *ngFor="let item of news; index as id;"
-    [id]="item.id"
-    [img]="item.jetpack_featured_media_url"
-    [title]="item.title.rendered"
-    [date]="item.date"
-  ></app-small-card>
+  <div class="small-cards">
+    <app-small-card
+      *ngFor="let item of news; index as id;"
+      [id]="item.id"
+      [img]="item.jetpack_featured_media_url"
+      [title]="item.title.rendered"
+      [date]="item.formatted_date"
+    ></app-small-card>
+</div>
